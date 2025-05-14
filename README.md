@@ -1,25 +1,7 @@
-## Project setup
-```
-npm install
-```
+## Instructions before first starting the project on YARN
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- First step - yarn install
+- Second step - yarn serve
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### design
+### Design
 https://www.figma.com/design/0xrbYAwzA8OFoYErgwFPVo/Simple-ToDo-List-Design--Community-

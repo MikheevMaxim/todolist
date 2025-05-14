@@ -1,14 +1,19 @@
 module.exports = {
   root: true,
-  env: {
-    node: true
-  },
-  extends: ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/prettier"],
-  parserOptions: {
-    parser: "babel-eslint"
-  },
+  env: { node: true },
+  extends: ['@antfu'],
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
-  }
-};
+    // Приоритет для порядка тегов компонента
+    'vue/component-tags-order': ['error', {
+      order: ['template', 'script', 'style'],
+    }],
+
+    // Правило для порядка блоков в .vue файле
+    'vue/block-order': ['error', {
+      order: ['template', 'script', 'style'],
+    }],
+
+    // Дополнительно: отключаем авто-фикс для setup-синтаксиса
+    'vue/script-setup-uses-vars': 'off',
+  },
+}
